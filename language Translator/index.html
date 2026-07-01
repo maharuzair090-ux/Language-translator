@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fa-solid fa-language"></i> Quick Language Translator</h1>
+        
+        <div class="wrapper">
+            <div class="text-input">
+                <select id="source-lang">
+                    <option value="en-GB">English</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="it-IT">Italian</option>
+                    <option value="ur-PK">Urdu</option>
+                    <option value="sd-PK">Sindhi</option>
+                </select>
+                <textarea id="source-text" placeholder="Type something to translate..."></textarea>
+            </div>
+
+            <div class="text-input">
+                <select id="target-lang">
+                    <option value="es-ES">Spanish</option>
+                    <option value="en-GB">English</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="it-IT">Italian</option>
+                     <option value="ur-PK">Urdu</option>
+                     <option value="sd-PK">Sindhi</option>
+                    
+                </select>
+                <textarea id="target-text" placeholder="Translation will appear here..." readonly></textarea>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="copy-btn" title="Copy Translation"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="speak-btn" title="Listen"><i class="fa-solid fa-volume-high"></i> Listen</button>
+        </div>
+
+        <button id="translate-btn">Translate Text</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
